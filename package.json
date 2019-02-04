@@ -1,0 +1,49 @@
+{
+	"name": "random-passwd",
+	"version": "0.1.0",
+	"description": "Generate a cryptographically strong random password string",
+	"main": "lib.js",
+	"bin": {
+		"random-passwd": "random-passwd.js"
+	},
+	"scripts": {
+		"test": "xo && nyc ava -v"
+	},
+	"engines": {
+		"node": ">=6"
+	},
+	"author": "Corey Farrell",
+	"license": "MIT",
+	"files": [
+		"lib.js",
+		"random-passwd.js"
+	],
+	"keywords": [
+		"password",
+		"random"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/cfware/random-passwd.git"
+	},
+	"bugs": {
+		"url": "https://github.com/cfware/random-passwd/issues"
+	},
+	"homepage": "https://github.com/cfware/random-passwd#readme",
+	"devDependencies": {
+		"ava": "^1.2.0",
+		"nyc": "^13.2.0",
+		"xo": "^0.24.0"
+	},
+	"nyc": {
+		"check-coverage": true,
+		"per-file": true,
+		"lines": 100,
+		"statements": 100,
+		"functions": 100,
+		"branches": 100,
+		"include": [
+			"*.js"
+		]
+	}
+}
