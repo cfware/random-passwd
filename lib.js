@@ -14,13 +14,11 @@ async function randomPasswd(bytes = 64) {
 		throw new RangeError('The argument must be >= 6 && <= 256 if provided');
 	}
 
-	return randomBytes(bytes).then(buf => {
-		return buf
-			.toString('base64')
-			.replace(/\+/g, '-')
-			.replace(/\//g, '_')
-			.replace(/=*$/, ''); // eslint-disable-line no-div-regex
-	});
+	return (await randomBytes(bytes))
+		.toString('base64')
+		.replace(/\+/g, '-')
+		.replace(/\//g, '_')
+		.replace(/=*$/, ''); // eslint-disable-line no-div-regex
 }
 
 module.exports = randomPasswd;

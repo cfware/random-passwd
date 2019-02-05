@@ -10,7 +10,7 @@ Generate a cryptographically strong random password string
 
 ### Install random-passwd
 
-This module requires node.js 6 or above.
+This module requires node.js 8 or above.
 
 ```sh
 npm i -g random-passwd
