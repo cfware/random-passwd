@@ -18,7 +18,7 @@ async function randomPasswd(bytes = 64) {
 		.toString('base64')
 		.replace(/\+/g, '-')
 		.replace(/\//g, '_')
-		.replace(/=*$/, ''); // eslint-disable-line no-div-regex
+		.replace(/=*$/, '');
 }
 
 module.exports = randomPasswd;
