@@ -16,9 +16,9 @@ async function randomPasswd(bytes = 64) {
 
 	return (await randomBytes(bytes))
 		.toString('base64')
-		.replace(/\+/g, '-')
-		.replace(/\//g, '_')
-		.replace(/=*$/, '');
+		.replace(/\+/gu, '-')
+		.replace(/\//gu, '_')
+		.replace(/=*$/u, '');
 }
 
 module.exports = randomPasswd;

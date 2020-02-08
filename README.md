@@ -10,7 +10,7 @@ Generate a cryptographically strong random password string
 
 ### Install random-passwd
 
-This module requires node.js 8 or above.
+This module requires node.js 10 or above.
 
 ```sh
 npm i -g random-passwd
@@ -38,15 +38,6 @@ Random bytes|Password Length|Bits|Combinations
 If someone knows that you generated a default password with this utility it would
 take an average of 6.7e+153 attempts to find your password by brute force (half of
 1.3e+154).
-
-## Running tests
-
-Tests are provided by xo and ava.
-
-```sh
-npm install
-npm test
-```
 
 [npm-image]: https://img.shields.io/npm/v/random-passwd.svg
 [npm-url]: https://npmjs.org/package/random-passwd
