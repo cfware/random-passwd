@@ -1,20 +1,6 @@
-# random-passwd
-
-[![Travis CI][travis-image]][travis-url]
-[![Greenkeeper badge][gk-image]](https://greenkeeper.io/)
-[![NPM Version][npm-image]][npm-url]
-[![NPM Downloads][downloads-image]][downloads-url]
-[![MIT][license-image]](LICENSE)
+# random-passwd [![NPM Version][npm-image]][npm-url]
 
 Generate a cryptographically strong random password string
-
-### Install random-passwd
-
-This module requires node.js 10 or above.
-
-```sh
-npm i -g random-passwd
-```
 
 ## Usage
 
@@ -41,9 +27,3 @@ take an average of 6.7e+153 attempts to find your password by brute force (half 
 
 [npm-image]: https://img.shields.io/npm/v/random-passwd.svg
 [npm-url]: https://npmjs.org/package/random-passwd
-[travis-image]: https://travis-ci.org/cfware/random-passwd.svg?branch=master
-[travis-url]: https://travis-ci.org/cfware/random-passwd
-[gk-image]: https://badges.greenkeeper.io/cfware/random-passwd.svg
-[downloads-image]: https://img.shields.io/npm/dm/random-passwd.svg
-[downloads-url]: https://npmjs.org/package/random-passwd
-[license-image]: https://img.shields.io/npm/l/random-passwd.svg
